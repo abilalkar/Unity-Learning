@@ -5,7 +5,8 @@ using UnityEngine;
 public class DestryoOutOfBounds : MonoBehaviour
 {
 
-    public float topBound = 30;
+    public float topBound = 30; //for projectiles
+    public float lowerBound = -10; //for ani
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +17,14 @@ public class DestryoOutOfBounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //destroy animals when out of bounds
+        //destroy fruits when out of bounds
         if (transform.position.z > topBound)
+        {
+            Destroy(gameObject);
+        }
+
+        //destroy animals when out of bound
+        if (transform.position.z < lowerBound)
         {
             Destroy(gameObject);
         }
