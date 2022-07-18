@@ -13,16 +13,6 @@ public class PlayerController : MonoBehaviour
     {
         playerRB.velocity = new Vector3(playerRB.velocity.x, bounceForce, playerRB.velocity.z);
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
+    

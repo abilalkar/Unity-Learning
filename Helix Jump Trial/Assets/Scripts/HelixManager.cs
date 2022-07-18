@@ -19,7 +19,7 @@ public class HelixManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < numberOfRings; i++)
+        for (int i = 0; i < numberOfRings; i++)
         {
             if (i == 0)
             {
@@ -33,10 +33,5 @@ public class HelixManager : MonoBehaviour
         }
         SpawnRing(helixRings.Length - 1);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+    
